@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+// Import partials.
+@import
+  "utilities/colors",
+  "utilities/variables",
+  "utilities/mixins",
+  "utilities/base",
+  "utilities/syntax-highlighting",
+
+  "layouts/header",
+  "layouts/footer"
+;
