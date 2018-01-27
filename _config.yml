@@ -35,6 +35,13 @@ plugins:
   - jemoji
   - jekyll-mentions
 
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+  - about.md
+  - work.md
+  - contact.md
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
