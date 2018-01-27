@@ -1,0 +1,9 @@
+.layout-default {
+  height: 100vh;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-rows: minmax(50px, 175px) auto minmax(50px, 175px);
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
