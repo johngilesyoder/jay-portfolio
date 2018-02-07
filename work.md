@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: work
 title: Selected Work
 permalink: /work/
 group: navigation
