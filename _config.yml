@@ -53,3 +53,14 @@ header_pages:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  work:
+    output: true
+
+
+defaults:
+  - scope:
+      type: work
+    values:
+      layout: project

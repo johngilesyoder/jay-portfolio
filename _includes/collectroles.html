@@ -1,0 +1,18 @@
+{% assign rawroles = "" %}
+{% for post in site.work %}
+  {% assign troles = post.roles | join:'|' | append:'|' %}
+  {% assign rawroles = rawroles | append:troles %}
+{% endfor %}
+{% assign rawroles = rawroles | split:'|' | sort %}
+
+{% assign site.roles = "" %}
+{% for role in rawroles %}
+  {% if role != "" %}
+    {% if roles == "" %}
+      {% assign roles = role | split:'|' %}
+    {% endif %}
+    {% unless roles contains role %}
+      {% assign roles = roles | join:'|' | append:'|' | append:role | split:'|' %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
