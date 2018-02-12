@@ -1,6 +1,8 @@
 .page {
   .page-header {
     margin: 0 0 60px;
+    display: flex;
+    align-items: center;
     .page-title {
       font-family: $display-font-family;
       font-weight: 800;
@@ -8,6 +10,10 @@
       margin: 0;
       text-transform: uppercase;
       letter-spacing: -0.025em
+    }
+    .back-link {
+      margin-left: auto;
+      display: block;
     }
   }
 

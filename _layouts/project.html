@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="page page-project">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+    <a href="/work/" class="back-link">&larr; Back to Selected Work</a>
+  </header>
+
+  <div class="page-content">
+    <aside class="project-sidebar">
+      <div class="sidebar-section role">
+        <h3>Role</h3>
+        <ul>
+          {% for role in page.roles %}
+            {% capture role_name %}{{ role }}{% endcapture %}
+            <li><span>{{ role_name }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="sidebar-section desscription">
+        <h3>Description</h3>
+        {{ content }}
+      </div>
+
+      <div class="sidebar-section project-links">
+        <a href="#">View on iTunes</a>
+        <a href="#">View website</a>
+      </div>
+
+
+    </aside>
+
+    <div class="project-content">
+      CONTENT
+    </div>
+
+  </div>
+
+</article>
