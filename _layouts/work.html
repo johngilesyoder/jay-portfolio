@@ -9,14 +9,14 @@ layout: default
 
   <div class="page-content">
     <div class="projects">
-
-      {% for item in site.work %}
+      {% assign sortedProjects = site.work | sort: "order" %}
+      {% for item in sortedProjects %}
         <a href="{{ item.url }}" class="project">
           <div class="content-bg">
-            <img src="http://placehold.it/500x500">
+            <img src="/images/work/{{ item.title | downcase }}/{{ item.name }}cover.jpg" alt="{{ item.name }}" >
             <div class="content">
               <h4>{{ item.title }}</h4>
-              <p>Mobile app UI+UX &nbsp;/&nbsp; Web UI</p>
+              <p>{{ item.role-summary }}</p>
             </div>
           </div>
         </a>
