@@ -1,6 +1,7 @@
 (function() {
-  let BioToggles;
+  let BioToggles, externalLinks;
 
+  // Toggle full or summary bio
   BioToggles = function() {
     let $toggles;
     $toggles = $('[data-bio]');
@@ -24,8 +25,17 @@
     });
   };
 
+  // Open external links in a new tab
+  externalLinks = function() {
+    $(document.links).filter(function() {
+      return this.hostname != window.location.hostname;
+    }).attr('target', '_blank');
+  }
+
+  // init functions
   $(function() {
     BioToggles();
+    externalLinks();
   });
 
 }).call(this);

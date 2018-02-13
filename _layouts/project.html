@@ -19,21 +19,24 @@ layout: default
         </ul>
       </div>
 
-      <div class="sidebar-section desscription">
+      <div class="sidebar-section description">
         <h3>Description</h3>
         {{ content }}
       </div>
 
-      <div class="sidebar-section project-links">
-        <a href="#">View on iTunes</a>
-        <a href="#">View website</a>
-      </div>
-
-
     </aside>
 
     <div class="project-content">
-      CONTENT
+      {% for image in page.images %}
+        {% if image.caption %}
+          <figure>
+            <img src="/images/work/{{ page.title | downcase }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
+            <figcaption>{{ image.caption }}</figcaption>
+          </figure>
+        {% else %}
+          <img src="/images/work/{{ page.title | downcase }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
+        {% endif %}
+		  {% endfor %}
     </div>
 
   </div>
