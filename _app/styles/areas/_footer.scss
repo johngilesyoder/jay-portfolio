@@ -1,0 +1,9 @@
+.site-footer {
+  align-self: center;
+  @include relative-font-size(0.875);
+  color: #808080;
+  a {
+    color: #808080;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,9 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+    &copy; {{ "now" | date: "%Y" }} {{ site.title | escape }}. {{ site.credits }}
+    <div>
+      {% include social.html %}
+    </div>
+
+</footer>

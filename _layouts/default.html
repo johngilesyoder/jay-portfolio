@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="layout-default">
+
+    {% include header.html %}
+
+    <main aria-label="Content">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+    <script src="{{ "/assets/lib/jquery-3.3.1.min.js" | relative_url }}"></script>
+    <script src="{{ "/assets/main.js" | relative_url }}"></script>
+  </body>
+
+</html>

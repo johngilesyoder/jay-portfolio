@@ -1,0 +1,44 @@
+---
+layout: default
+---
+<article class="page page-project">
+  <header class="page-header">
+    <h1 class="page-title">{{ page.title | escape }}</h1>
+    <a href="/work/" class="back-link">&larr; Back to Selected Work</a>
+  </header>
+
+  <div class="page-content">
+    <aside class="project-sidebar">
+      <div class="sidebar-section role">
+        <h3>Role</h3>
+        <ul>
+          {% for role in page.roles %}
+            {% capture role_name %}{{ role }}{% endcapture %}
+            <li><span>{{ role_name }}</span></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="sidebar-section description">
+        <h3>Description</h3>
+        {{ content }}
+      </div>
+
+    </aside>
+
+    <div class="project-content">
+      {% for image in page.images %}
+        {% if image.caption %}
+          <figure>
+            <img src="/images/work/{{ page.title | downcase }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
+            <figcaption>{{ image.caption }}</figcaption>
+          </figure>
+        {% else %}
+          <img src="/images/work/{{ page.title | downcase }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
+        {% endif %}
+		  {% endfor %}
+    </div>
+
+  </div>
+
+</article>

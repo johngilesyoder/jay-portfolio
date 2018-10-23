@@ -1,0 +1,19 @@
+// Define defaults for each variable.
+
+$base-font-family: "franklin-gothic-urw", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$condensed-font-family: "franklin-gothic-urw-comp", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$display-font-family: "futura-pt-condensed", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$base-font-size:   16px !default;
+$base-font-weight: 400 !default;
+$small-font-size:  $base-font-size * 0.875 !default;
+$base-line-height: 1.5 !default;
+
+$spacing-unit:     30px !default;
+
+$table-text-align: left !default;
+
+// Width of the content area
+$content-width:    1170px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
