@@ -13,7 +13,7 @@ layout: default
       {% for item in sortedProjects %}
         <a href="{{ item.url }}" class="project">
           <div class="content-bg">
-            <img src="/images/work/{{ item.title | downcase }}/{{ item.name }}cover.jpg" alt="{{ item.name }}" >
+            <img src="/images/work/{{ item.slug }}/cover.jpg" alt="{{ item.name }}" >
             <div class="content">
               <h4>{{ item.title }}</h4>
               <p>{{ item.role-summary }}</p>
