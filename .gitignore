@@ -1,5 +1,7 @@
 ### Jekyll ###
+/_site/
 _site/
+_site
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
@@ -10,6 +12,9 @@ Gemfile.lock
 package.json
 /node_modules/
 
+### Gems ###
+/vendor/
+.bundle/
 
 ### Atom ###
 .ftpconfig

@@ -1,20 +1,43 @@
 .page-about {
   .introduction {
     display: flex;
-    align-items: flex-end;
-    margin: 0 0 60px;
+    align-items: center;
+    margin: 0 0 100px;
     .welcome {
       font-size: 36px;
       line-height: 1.2;
       letter-spacing: -.5px;
       width: 60%;
-      margin-bottom: 60px;
+      //margin-bottom: 60px;
+      padding-right: 60px;
     }
     .portrait-container {
-
+      width:40%;
     }
     .portrait {
-      height: 450px;
+      position: relative;
+      .flourish-1 {
+        position: absolute;
+        top: 16px;
+        left: -20px;
+        display: block;
+        width: 200px;
+        height: 60px;
+        background: rgba($brand-color, .2);
+      }
+      .flourish-2 {
+        position: absolute;
+        top: 40%;
+        left: 15%;
+      }
+      .flourish-3 {
+        position: absolute;
+        bottom: -7px;
+        right: -7px;
+      }
+    }
+    .portrait-photo {
+      width: 100%;
     }
   }
   .bio {
