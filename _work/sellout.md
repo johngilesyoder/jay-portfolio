@@ -1,11 +1,11 @@
 ---
 title: Sellout
 order: 1
-role-summary: Mobile app UI+UX &nbsp;/&nbsp; Web UI
+role-summary: Creative Lead &nbsp;/&nbsp; Product Design &nbsp;/&nbsp; UI Development
 roles:
-  - UI/UX
   - Creative Lead
-  - Developer
+  - UI/UX Design
+  - UI Developer
 images:
   - filename: 1.jpg
     caption: This is a caption
