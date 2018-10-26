@@ -10,6 +10,9 @@
       width: 60%;
       //margin-bottom: 60px;
       padding-right: 60px;
+      a {
+        color: $brand-color;
+      }
     }
     .portrait-container {
       width:40%;
@@ -34,6 +37,7 @@
         position: absolute;
         bottom: -7px;
         right: -7px;
+        opacity: .3;
       }
     }
     .portrait-photo {
