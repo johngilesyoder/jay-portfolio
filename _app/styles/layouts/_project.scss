@@ -41,5 +41,22 @@
   }
   .project-content {
     grid-area: content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    figure {
+      margin: 0 0 30px;
+      figcaption {
+        margin: 0 0 10px;
+        display: block;
+      }
+      img {
+        border-radius: 10px;
+        width: 100%;
+      }
+      &.small {
+        width: calc(50% - 15px);
+      }
+    }
   }
 }
