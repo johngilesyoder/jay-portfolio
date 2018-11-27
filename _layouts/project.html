@@ -28,14 +28,13 @@ layout: default
 
     <div class="project-content">
       {% for image in page.images %}
-        {% if image.caption %}
-          <figure>
-            <img src="/images/work/{{ page.title | downcase }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
-            <figcaption>{{ image.caption }}</figcaption>
+
+          <figure {% if image.size == 'small' %} class="small" {% endif %}>
+            {% if image.caption %}
+              <figcaption>{{ image.caption }}</figcaption>
+            {% endif %}
+            <img src="/images/work/{{ page.slug }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
           </figure>
-        {% else %}
-          <img src="/images/work/{{ page.title | downcase }}/{{ image.filename }}" {% if image.alt %} alt="{{ image.alt }}" {% endif %} >
-        {% endif %}
 		  {% endfor %}
     </div>
 
